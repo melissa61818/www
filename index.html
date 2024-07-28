@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="audiovisuales/logo.png" type="image/x-icon">
+   <b> <title>Feliz Dia del Padre</title></b>
+</head>
+<style>
+
+header
+{
+    font-family: "Comic Sans MS";
+    color: white;
+    text-align: center;
+}
+
+
+    body
+{
+    margin: 0%;
+    padding: 0%;
+    width: 100%; 
+    background-color: black;
+    text-align: center;
+}   
+
+.image
+{
+    text-align: center;
+}
+
+button
+{
+    height: 20%;
+    width: 100%;
+    border-radius: 40%;
+    border-width: 50%;
+    border: 8px solid white;
+}
+.item{
+    list-style-type: none;
+}
+.item  button
+{
+    background-color: grey;
+     width: 100%;
+    color: black;
+    font-family: "Comic Sans MS"
+}
+.content
+{
+    display: none;
+    
+}
+
+.heart {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  transform: rotate(20deg);
+  top: 50px;
+  left: 10px;
+}
+
+.heart::before,
+.heart::after {
+  content: '';
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.heart::before {
+  top: -50px;
+  left: 0;
+}
+
+.heart::after {
+  top: 0;
+  left: 50px;
+}
+
+ul 
+{
+    padding: 5%;
+    margin: 2%;
+}
+
+
+  
+</style>
+<body>
+ <header>
+    <center>
+         <h1>
+             Feliz Dia del Padre Papi
+         </h1>
+    </center>
+ </header>
+    <div >
+        <img src="audiovisuales/papi.jpeg" alt="Papi" width="350px" height="350px">
+    </div>
+
+<div class="Papi">
+
+
+
+    <div class="heart"></div>
+    <br><br>
+
+    <ul>
+        <li class="item">
+           <button onclick="toggleContent(1)"><h1> Cancion Favorita</h1></button>
+            <div id="content1" class="content"><iframe src="https://drive.google.com/file/d/1soyFCFodb_NCTxN4H0nA8OIU1tbwS05j/preview" width="100%" height="300" allow="autoplay" allowfullscreen></iframe></div>
+         </li><br>
+
+        <li class="item">
+            <button onclick="toggleContent(2)"><h1>Color Favorito</h1></button> <br>
+            <div id="content2" class="content"><img src="audiovisuales/negro.png" alt="color amarillo" width="100%" height="300"></div>
+        </li><br>
+
+        <li class="item">
+            <button onclick="toggleContent(3)"><h1>Pelicula Favorita</h1></button>
+            <div id="content3" class="content"><iframe src="https://drive.google.com/file/d/13tQcUU23lKIEQLuScbTSsGEmhm92iLVp/preview" width="100%" height="500%" allow="autoplay" allowfullscreen></iframe></div>
+        
+        </li><br>
+        <li class="item">
+            <button onclick="toggleContent(4)"><h1>Comida Favorita</h1></button>
+            <div id="content4" class="content"><img src="audiovisuales/comida.jfif" alt="sancocho con arroz blanco" width="70%" height="150px"></div>
+        </li><br>
+        <li class="item">
+            <button onclick="toggleContent(5)"><h1>Animal Favorito</h1></button>
+            <div id="content5" class="content"><img src="audiovisuales/lobo.jpg" alt="perro" width="100%" height="200"></div>
+        </li><br>
+        <li class="item">
+            <button onclick="toggleContent(6)"><h1> Cosa en el mundo Favorita</h1></button>
+            <div id="content6" class="content">
+                <table border="5px" border-color="white" align="center" >
+                    <th colspan="3" style="color: white; size: 20px;">
+                        La tranquilidad
+                    </th>
+                    <tr>
+                        <td>
+                            <img src="audiovisuales/tranquilidad.jpg" alt="tranquilidad" width="100%" height="100%">
+                        </td>
+                    </tr>
+                    
+                </table>
+        </li>
+    </ul>
+</div>
+
+
+
+
+
+
+
+
+    <script>
+
+      function toggleContent(number) {
+            const content = document.getElementById(`content${number}`);
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+
+    <footer>
+       <center><font color="white"> <h2>Derechos de autor <i>Melissa</i> &copy;2024</font></h2></center>
+    </footer>
+</body>
+</html>
